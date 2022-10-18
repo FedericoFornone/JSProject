@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+
+      header {
+        font-size: 80px;
+        font-family: "Anton", sans-serif;
+        font-family: "Tiro Gurmukhi", serif;
+        text-decoration: underline;
+        text-underline-offset: 30px;
+
+        margin-bottom: 40px;
+      }
+
+      body {
+        font-family: Arial;
+        background-color: #e4d095e1;
+      }
+
+      /* The grid: Four equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 2px;
+      }
+
+      /* Style the images inside the grid */
+      .column img {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .column img:hover {
+        opacity: 1;
+      }
+
+      .info {
+        font-family: "Anton", sans-serif;
+        font-family: "Tiro Gurmukhi", serif;
+        text-align: center;
+        border: 3px solid black;
+        border-radius: 50px;
+        width: 450px;
+        padding: 20px;
+        margin-bottom: 40px;
+      }
+
+      /* The expanding image container */
+      .container {
+        margin-bottom: 40px;
+        margin-left: 34%;
+        width: 80%;
+      }
+
+      img {
+        border-radius: 30px;
+      }
+
+      /* Closable button inside the expanded image */
+      .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+      }
+    </style>
+    <title>Thumbnail Image</title>
+  </head>
+
+  <body>
+    <header style="text-align: center">
+      <h2>Galleria degli Orologi</h2>
+    </header>
+
+    <div class="container">
+      <img id="expandedImg" style="width: 40%" />
+      <div id="imgtext"></div>
+    </div>
+
+    <div class="info">
+      <h2>Seleziona il prodotto interessato per visualizzarlo</h2>
+    </div>
+
+    <!-- The four columns -->
+    <div class="row">
+      <div class="column">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Gallet_clamshell_600x600_2.jpg"
+          alt="Primo"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Gallet_clamshell_600x600_1.jpg"
+          alt="Secondo"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Gallet_clamshell_600x600_4.jpg"
+          alt="Terzo"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/69/Gallet_clamshell_600x600_9.jpg"
+          alt="Quarto"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+    </div>
+
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        expandImg.src = imgs.src;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
