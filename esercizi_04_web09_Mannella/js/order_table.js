@@ -8,6 +8,9 @@ const BTN = document.getElementById("order-btn");
 BTN.addEventListener("click", () => {
     orderTable(direction);
 
+    /**
+     * Invert the direction
+     */
     direction = direction === 1 ? -1 : 1;
 });
 
@@ -25,10 +28,19 @@ function orderFunc(a, b) {
 }
 
 function orderTable(direction) {
+    /**
+     * HTML Collection to JS Array
+     */
     let rows = Array.prototype.slice.call(tbody.getElementsByTagName("tr"));
 
+    /**
+     * Sort the rows with the order func based on the direction given
+     */
     let orderedRows = direction === 1 ? rows.sort(orderFunc) : rows.sort(orderFunc).reverse();
 
+    /**
+     * Clear the table body and insert the ordered items
+     */
     tbody.innerHTML = "";
     for (const row of orderedRows) {
         tbody.appendChild(row);
