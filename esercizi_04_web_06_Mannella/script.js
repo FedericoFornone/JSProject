@@ -28,6 +28,9 @@ function createTree(container,data){
     
 }
 
+/**
+ * Recursive function that creates an ul list for each nesting in the data
+ */
 function createNestedTree(elem){
     
     let ul = document.createElement("ul");
