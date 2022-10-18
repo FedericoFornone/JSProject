@@ -12,7 +12,7 @@
       }
 
       header {
-        font-size: 70px;
+        font-size: 50px;
         font-family: "Anton", sans-serif;
         font-family: "Tiro Gurmukhi", serif;
         text-decoration: underline;
@@ -24,6 +24,7 @@
       body {
         font-family: Arial;
         background-color: #e4d095e1;
+        overflow-x: hidden;
       }
 
       /* The grid: Four equal columns that floats next to each other */
@@ -44,35 +45,26 @@
       }
 
       .info {
+        font-size: 15px;
         font-family: "Anton", sans-serif;
         font-family: "Tiro Gurmukhi", serif;
         text-align: center;
-        border: 3px solid black;
-        border-radius: 50px;
-        width: 650px;
-        padding: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 400px;
+        padding: 10px;
         margin-bottom: 40px;
       }
 
       /* The expanding image container */
       .container {
         margin-bottom: 40px;
-        margin-left: 34%;
+        margin-left: 25%;
         width: 80%;
       }
 
       img {
         border-radius: 30px;
-      }
-
-      /* Closable button inside the expanded image */
-      .closebtn {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        color: white;
-        font-size: 35px;
-        cursor: pointer;
       }
     </style>
     <title>Thumbnail Image</title>
@@ -84,7 +76,7 @@
     </header>
 
     <div class="container">
-      <img id="expandedImg" style="width: 40%" />
+      <img id="expandedImg" style="width: 60%" />
       <div id="imgtext"></div>
     </div>
 
@@ -97,7 +89,6 @@
       <div class="column">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Gallet_clamshell_600x600_2.jpg"
-          alt="Primo"
           style="width: 100%"
           onclick="myFunction(this);"
         />
@@ -105,7 +96,6 @@
       <div class="column">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Gallet_clamshell_600x600_1.jpg"
-          alt="Secondo"
           style="width: 100%"
           onclick="myFunction(this);"
         />
@@ -113,7 +103,6 @@
       <div class="column">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Gallet_clamshell_600x600_4.jpg"
-          alt="Terzo"
           style="width: 100%"
           onclick="myFunction(this);"
         />
@@ -121,7 +110,37 @@
       <div class="column">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/6/69/Gallet_clamshell_600x600_9.jpg"
-          alt="Quarto"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img
+          src="https://www.goldfingersorologi.it/wp-content/uploads/2022/07/Octo-finissimo-preview-600x600.jpg"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://www.gustave-et-cie.fr/wp-content/uploads/2022/07/Georges-argent-bleu-1-600x600.webp"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://www.goldfingersorologi.it/wp-content/uploads/2021/10/4776-Gmt-Master-II-116713LN-NOS-discontinued-600x600.jpg"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://boegli.com/wp-content/uploads/2021/05/pocket-4-600x600.jpg"
           style="width: 100%"
           onclick="myFunction(this);"
         />
