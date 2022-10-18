@@ -1,0 +1,1 @@
+let table = document.getElementById("people-table");
