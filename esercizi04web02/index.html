@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi04web02</title>
+    <h1>Esercizio 2</h1>
+</head>
+
+<body>
+    <select id="genres" onchange="choice()">
+        <option value="Rock">Rock</option>
+        <option value="Blues" selected>Blues</option>
+        <option value="Classic">Classic</option>
+    </select>
+    <script>
+        function choice() {
+            var x = document.getElementById("genres");
+            alert(x.options[x.selectedIndex].value);
+        }
+    </script>
+
+
+</body>
+
+</html>
