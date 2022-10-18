@@ -2,7 +2,7 @@
 Progetto di gruppo in JS (ITS ICT)
 
 ## Componenti
-Federico Fornone \n
+Federico Fornone <br>
 Marco Emmanuelli
 Cristian Mannella
 Fabio Di Bitonto
